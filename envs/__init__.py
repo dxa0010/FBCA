@@ -1,0 +1,141 @@
+from gym.envs.registration import register
+
+register(
+    id='lalenv-v0',
+    entry_point='envs.ral_env:LalEnv'
+)
+
+register(
+    id='lalenv_test-v0',
+    entry_point='envs.ral_env_test:LalEnv'
+)
+
+register(
+    id='lalenv_classify-v0',
+    entry_point='envs.ral_classify_env:LalClEnv'
+)
+
+register(
+    id='lalenv_classify_test-v0',
+    entry_point='envs.ral_cls_test_env:LalClEnv'
+)
+
+register(
+    id='lalenv_classify_test_random-v0',
+    entry_point='envs.ral_cls_test_random_env:LalClEnv'
+)
+
+register(
+    id='ralenv_multi_classify-v0',
+    entry_point='envs.ral_multi_class_env:RAL_Multi_Class_Env'
+)
+
+register(
+    id='ralenv_multi_classify_1-v0',
+    entry_point='envs.ral_multi_class_env_2:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_1-v1',
+    entry_point='envs.ral_multi_class_env_2_aq:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_2-v0',
+    entry_point='envs.ral_multi_class_env_10:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_3-v0',
+    entry_point='envs.ral_multi_class_env_20:RAL_Multi_Class_Env'
+)
+
+register(
+    id='ralenv_multi_classify_test-v0',
+    entry_point='envs.ral_multi_class_env_test:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_test_1-v0',
+    entry_point='envs.ral_multi_class_env_test_5:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_test_2-v0',
+    entry_point='envs.ral_multi_class_env_test_10:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_test_3-v0',
+    entry_point='envs.ral_multi_class_env_test_15:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_test_4-v0',
+    entry_point='envs.ral_multi_class_env_test_25:RAL_Multi_Class_Env'
+)
+ 
+## test for real dataset 
+register(
+    id='ralenv_multi_classify_adalt-v0',
+    entry_point='envs.ral_multi_class_env_test_adalt:RAL_Multi_Class_Env'
+)
+
+register(
+    id='ralenv_multi_classify_adalt-v1',
+    entry_point='envs.ral_multi_model_env_test_adalt:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_adult_learn-v0',
+    entry_point='envs.ral_multi_class_env_learn_adult:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_car-v0',
+    entry_point='envs.ral_multi_class_env_test_car:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_car-v1',
+    entry_point='envs.ral_multi_model_car:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_google-v0',
+    entry_point='envs.ral_multi_class_env_test_google:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_google-v1',
+    entry_point='envs.ral_multi_model_google:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_trip-v0',
+    entry_point='envs.ral_multi_class_env_test_trip:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_trip-v1',
+    entry_point='envs.ral_multi_model_trip:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_white-v0',
+    entry_point='envs.ral_multi_class_env_test_white:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_white-v1',
+    entry_point='envs.ral_multi_model_white:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_select-v1',
+    entry_point='envs.ral_multi_model_select:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_red-v0',
+    entry_point='envs.ral_multi_class_env_test_red:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_classify_red-v1',
+    entry_point='envs.ral_multi_model_red:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_compare-v0',
+    entry_point='envs.ral_compare_oracle:RAL_Multi_Class_Env'
+)
+register(
+    id='ralenv_multi_compare_learn-v0',
+    entry_point='envs.ral_compare_oracle_learn:RAL_Multi_Class_Env'
+)
+
+register(
+    id='ralenv_multi_classify_random-v0',
+    entry_point='envs.ral_multi_class_env_random:RAL_Multi_Class_Env'
+)
