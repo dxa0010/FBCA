@@ -64,13 +64,13 @@ class RAL_Multi_Class_Env(gym.Env):
         self.get_num = 0
         
         self.mse_test_list = np.array([])
-        # df_name = "_ral_multi_class_red_{}.csv".format(self.epsode_num)
-        # df_train_name = os.path.join("data","df_train" + df_name)
-        # df_train.to_csv(df_train_name, index=False)
-        # df_test_name = os.path.join("data","df_test" + df_name)
-        # df_test.to_csv(df_test_name, index=False)
-        # df_pool_name = os.path.join("data","df_pool"+df_name)
-        # df_pool.to_csv(df_pool_name, index=False)
+        df_name = "_ral_multi_class_red_{}.csv".format(self.epsode_num)
+        df_train_name = os.path.join("data","df_train" + df_name)
+        df_train.to_csv(df_train_name, index=False)
+        df_test_name = os.path.join("data","df_test" + df_name)
+        df_test.to_csv(df_test_name, index=False)
+        df_pool_name = os.path.join("data","df_pool"+df_name)
+        df_pool.to_csv(df_pool_name, index=False)
 
         self.prob_pool, self.voting_pool, self.score, self.feature = self.make_model()
         observation = self.feature
